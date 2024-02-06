@@ -39,7 +39,7 @@ def add_user_in_table(username, speed):
         connection.commit()
     else:
         max_record = user[1]
-        if speed < max_record and speed > 0:
+        if speed > max_record and speed > 0:
             max_record = speed
         count_texts = user[2] + 1
         cursor.execute(
