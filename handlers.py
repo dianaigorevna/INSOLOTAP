@@ -100,7 +100,7 @@ async def message_handler_statistic(msg: Message):
     if user:
         await msg.answer(f"""Ваша статистика:
 Текстов написано: {user[2]}
-Рекорд по времени: {user[1]} символов/сек.""", reply_markup=keyboard)
+Рекорд по скорости: {user[1]} символов/сек.""", reply_markup=keyboard)
     else:
         await msg.answer("Вы еще не напечатали ни одного текста", reply_markup=keyboard)
 
